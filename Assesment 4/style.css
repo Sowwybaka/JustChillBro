@@ -1,0 +1,165 @@
+.Premium_version{
+    background-color: blue;
+    width: 400px;
+    margin-top:100px;
+    height: 400px;
+    text-align: center;
+    border-radius: 10px;
+    animation-name: premium;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+    animation-delay: 0.4s;
+    
+    
+    
+}
+@keyframes premium {
+    0%{
+        margin-top: 100px;
+        
+    }
+    50%{
+        margin-top: 0px;
+    }
+    100%{
+        margin-top: 100px;
+    }
+    
+}
+.basic_version{
+   
+    width:360px;
+    background-color: red;
+    height: 400px;
+    text-align: center;
+    border-radius: 10px;
+    animation-name: basic;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+    margin-top: 100px;
+}
+@keyframes basic {
+    0%{
+        margin-top: 100px;
+        
+    }
+    50%{
+        margin-top: 0px;
+    }
+    100%{
+        margin-top: 100px;
+    }
+}
+.pro_version{
+   
+    margin-top: 100px;
+    background: orange;
+    width: 400px;
+    height: 400px;
+    text-align: center;
+    border-radius: 10px;
+    animation-name: pro;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+    animation-delay: 0.8s;
+}
+@keyframes pro {
+    0%{
+        margin-top: 100px;
+        
+    }
+    50%{
+        margin-top: 0px;
+    }
+    100%{
+        margin-top: 100px;
+    }
+}
+button{
+    width: 300px;
+    height:60px;
+    border-radius: 20px;
+    background-color: ;
+}
+body{
+    background-color: aqua;
+} 
+#validation_box{
+    width:250px;
+    height: 30px;
+    border-radius: 10px;
+
+}
+#bv{
+    font-size: 30px;
+    color: black;
+}
+/* --------------------------------------- sidebar --------------------------------------- */
+
+.sidebar{
+    background-color: white;
+    width: 15%;
+    height: 80vh;
+    float: left;
+    
+}
+.menu-icon{
+    margin-right: 15px;
+    margin-top: 5px;
+    cursor: pointer;
+}
+.basicgameimg{
+    width: 38px;
+    float: left;
+    margin-right: 8px;
+}
+/* --------------------------------------- smallsidebar --------------------------------------- */
+.smallsidebar{
+    background-color: white;
+    width: 4%;
+    height: 80vh;
+}
+.smallsidebar a h2{
+    display: none
+    
+}
+.smallsidebar a img{
+    margin-top: 60px;
+}
+/* --------------------------------------- flex container --------------------------------------- */
+.flex-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+.flex-box{
+    height: 80vh;
+    width: 80%;
+    float: right;
+}
+.flex-item{
+    width: 220px;
+    background-color: white;
+    height: 300px;
+    text-align: center;
+    border: solid;
+    border-color: black;
+    border-radius: 10px;
+    border-width:5px; 
+    transition: all;
+    transition-duration:0.45s;
+}
+.flex-item:hover{
+width: 260px;
+height: 330px;
+margin-bottom:50px;
+
+}
+.flex-item-image{
+    width:200px;
+}
+.flex-item-button{
+    height: 30px;
+    width: 100px;
+}

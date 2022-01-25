@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button type="button" onclick="onetoten()">Click to guess the number (Difficulty:easy) 1-10</button>
+    <button type="button" onclick="onetohun()">Click to guess the number (Difficulty:medium) 1-100</button>
+    <button type="button" onclick="onetothou()">Click to guess the number (Difficulty:Hard) 1-1000</button>
+
+
+
+
+    <script>
+        function onetoten() {
+            let number = Math.floor(Math.random() * 10) + 1
+            
+            user = prompt("Guess the number!")
+            if (number == user) {
+                document.write("You've guessed the correct number! Congradulations!")
+            }
+            else {
+                document.write("Oops! You guessed the wrong number. The correct number was " + number + ". Better luck next time!")
+            }
+        }
+        function onetohun() {
+            let number = Math.floor(Math.random() * 100) + 1
+            user = prompt("Guess the number!")
+            if (number == user) {
+                document.write("You've guessed the correct number! Congradulations!")
+            }
+            else {
+                document.write("Oops! You guessed the wrong number.The correct number was " + number + ". Better luck next time!")
+            }
+        }
+        function onetothou(){
+            let number = Math.floor(Math.random() * 1000) + 1
+        user = prompt("Guess the number!")
+        if (number == user) {
+            document.write("You've guessed the correct number! Congradulations!")
+        }
+        else {
+            document.write("Oops! You guessed the wrong number.The correct number was " + number + ". Better luck next time!")
+        }
+    }
+    </script>
+
+</body>
+
+</html>

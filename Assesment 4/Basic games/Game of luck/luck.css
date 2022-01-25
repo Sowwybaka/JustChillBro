@@ -1,0 +1,82 @@
+body{
+    background-color: skyblue;
+}
+.table{
+    float: right;
+    background-color: blue;
+    margin-top: 30px;
+    margin-right: 30px;
+    border: solid;
+    border-width: 10px;
+    border-radius: 20px;
+}
+.scoreboard{
+    height: 83vh;
+    width: 650px;
+    margin-top: 30px;
+    margin-left: 30px;
+    background-color: blue;
+    float: left;
+    border: solid;
+    border-width: 10px;
+    border-radius: 20px;
+    
+}
+
+td{
+    border:dashed;
+    
+}
+#scores td{
+    height: 40vh;
+    border: solid;
+
+}
+.displayScore{
+    font-size: 200px;
+    text-align: center;
+    height: 100px;
+    
+}
+.scoreboard h3{
+    display: none;
+}
+.scoreboard h2{
+    display: none;
+}
+.smallScoreboard{
+
+}
+/* ----------------------------------------Small Scoreboard------------------------------------------------------- */
+.smallScoreboard h3{
+    color: black;
+    display: flex;
+    width: 300px;
+    text-align: center;
+    margin-right: 300px;
+}
+.smallScoreboard h2{
+    color: black;
+    display: flex;
+    width: 300px;
+    text-align: center;
+    margin-right: 300px;
+}
+.smallScoreboard img{
+    width: 155px;
+}
+#scores{
+    float: left;
+}
+.instructions{
+    float: right;
+    width: 150px;
+    margin-right: 150px;
+}
+#showhideInstructionsGOL{
+    background-color: blue;
+    width: 100px;
+    height: 60px;
+    margin-left: 30px;
+    margin-top: 200px;
+}

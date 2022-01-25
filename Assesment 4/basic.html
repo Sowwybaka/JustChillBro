@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+var candy = createSprite(200,10);
+candy.setAnimation("candy");
+candy.scale = 0.1;
+function setCandy(){
+candy.velocityY = +5;
+}
+setCandy();
+
+var pumpkin = createSprite(200,350);
+pumpkin.setAnimation("pumpkin");
+pumpkin.scale = 0.3;
+
+var score = 0;
+
+function draw() {
+if (score == 10) {
+  var confetti = createSprite (200, 200);
+    confetti.setAnimation("confetti");
+    confetti.scale = 5;
+    confetti.velocityY = 5;
+  }
+    
+  if (candy.isTouching(pumpkin)) {
+  candy.setAnimation;
+  candy.y = 0;
+  candy.velocityY = +5;
+  candy.x = randomNumber(30, 300);
+  score = score +1;
+  }
+ if (candy.y > 390) {
+    candy.setAnimation;
+  candy.y = 0;
+  candy.velocityY = +5;
+  candy.x = randomNumber(30, 300);
+ }
+ 
+ 
+  
+  background("white");
+  
+  if(keyDown("left")){
+    pumpkin.x = pumpkin.x - 5;
+  }
+  
+  if(keyDown("right")){
+    pumpkin.x = pumpkin.x + 5;
+  }
+  
+ 
+  
+  textSize(20);
+  text("Score: " + score, 10, 10, 100, 100);
+  drawSprites();
+
+
+
+
+}
+
+    </script>
+</body>
+</html>

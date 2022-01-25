@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body style="background-color: red;">
+    <div class="sidebar">
+        <nav>
+            <img class="menu-icon" onclick="changeSideBar()"
+                src="https://cdn0.iconfinder.com/data/icons/heroicons-ui/24/icon-menu-512.png" width="30px">
+            <br><br><br><br>
+            <a href="Basic games/dice.html">
+
+                <img class="basicgameimg"
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/2-Dice-Icon.svg/2048px-2-Dice-Icon.svg.png">
+                <h2>Roll the dice</h2>
+            </a>
+            <br><br>
+            <a href="Basic games/game.html">
+                <img class="basicgameimg"
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Icon-round-Question_mark.svg/1200px-Icon-round-Question_mark.svg.png">
+                <h2>Guess the number</h2>
+                <br><br>
+            </a>
+            <a href="/Basic games/tic tac toe/tictactoe.html">
+                <img class="basicgameimg"
+                    src="https://cdn.iconscout.com/icon/premium/png-256-thumb/tic-tac-toe-15-836405.png">
+                <h2>Tic Tac Toe</h2>
+            </a>
+            <br><br>
+            <a href="/Basic games/car racing/car-race.html">
+                <img class="basicgameimg" src="race-car-icon-26.jpg">
+                <h2>Car game</h2>
+            </a>
+            <br><br>
+            <a href="/Basic games/Game of luck/index.html">
+                <img class="basicgameimg"
+                    src="https://cdn1.iconfinder.com/data/icons/finger-line-vol1/64/icn_finger_fingercross-512.png">
+                <h2>Game of Luck</h2>
+            </a>
+        </nav>
+    </div>
+    <div class="flex-box flex-container">
+        <div class="flex-item">
+            <img class="flex-item-image" width="100px"
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/2-Dice-Icon.svg/2048px-2-Dice-Icon.svg.png">
+            <p>Roll the dice</p>
+            <a href="basic games/dice.html">
+                <button class="flex-item-button">Play Now</button>
+            </a>
+        </div>
+        <div class="flex-item">
+            <img class="flex-item-image" width="100px"
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Icon-round-Question_mark.svg/1200px-Icon-round-Question_mark.svg.png">
+            <p>Guess the Number</p>
+            <a href="basic games/game.html">
+                <button class="flex-item-button">Play Now</button>
+            </a>
+        </div>
+        <div class="flex-item">
+            <img class="flex-item-image" width="100px"
+                src="https://cdn.iconscout.com/icon/premium/png-256-thumb/tic-tac-toe-15-836405.png">
+            <p>Tic Tac Toe</p>
+            <a href="basic games/tic tac toe/tictactoe.html">
+                <button class="flex-item-button">Play Now</button>
+            </a>
+        </div>
+        <div class="flex-item">
+            <img class="flex-item-image" width="100px"
+                src="http://127.0.0.1:5501/race-car-icon-26.jpg">
+            <p>Car game</p>
+            <a href="Basic games/car racing/car-race.html">
+                <button class="flex-item-button">Play Now</button>
+            </a>
+        </div>
+        <div class="flex-item">
+            <img class="flex-item-image" width="100px"
+                src="https://cdn1.iconfinder.com/data/icons/finger-line-vol1/64/icn_finger_fingercross-512.png">
+            <p>Game of Luck</p>
+            <a href="/Basic games/Game of luck/luck.html">
+                <button class="flex-item-button">Play Now</button>
+            </a>
+        </div>
+
+    </div>
+    <script>
+        var sidebar = document.querySelector(".sidebar")
+        function changeSideBar() {
+            sidebar.classList.toggle("smallsidebar")
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="car-race.css" />
+    <title>Document</title>
+</head>
+
+<body>
+    <h1 class="header">Car Racing game</h1>
+    <div class="left">
+        <div class="buttons">
+            <a href="car-race.html">
+                <button>Reset</button>
+                <br /><br />
+            </a>
+
+            <button id="redcar" onclick="moveRedCar()">Play</button>
+
+            <button id="bluecar" onclick="moveBlueCar()">Play</button>
+        </div>
+        <!-- <div class="score">
+            <h1>Scores</h1>
+            </div> -->
+        <br />
+        <br />
+        <br />
+
+        <div class="scoreBoard">
+            <center>
+                <table>
+                    <tr>
+                        <td>
+                            <h1 class="vehicleName">Red</h1>
+                        </td>
+                        <td class="vst">
+                            <h1 id="redMoves" class="vehicleScore">0</h1>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <h1 class="vehicleName">Blue</h1>
+                        </td>
+                        <td class="vst">
+                            <h1 id="blueMoves" class="vehicleScore">0</h1>
+                        </td>
+                    </tr>
+                </table>
+                <div class="instructions">
+                    <button onclick="seeHideInstructions()" class="instruction-button">See/Hide Instructions</button>
+                    <h3>This is a multiplayer game. Player one goes first. Player one will be the red car, and player two will be the blue car. To play, player one has to click the red play button. For player two, click the blue play button. Whoever crosses the finish line first is the winner! </h3>
+                </div>
+            </center>
+        </div>
+        <div class="comment">
+            <h3 id="winner"></h3>
+        </div>
+        
+    </div>
+    <div class="right">
+        <img width="380px" src="https://i.pinimg.com/originals/8b/18/c0/8b18c00dc934743470c5d0c8cb2a4642.jpg" />
+        <img width="380px" src="https://i.pinimg.com/originals/8b/18/c0/8b18c00dc934743470c5d0c8cb2a4642.jpg" />
+        <img width="380px" src="https://i.pinimg.com/originals/8b/18/c0/8b18c00dc934743470c5d0c8cb2a4642.jpg" />
+        <table>
+            <tr>
+                <td><img id="1" src="Car-red.jpg" width="100px" /></td>
+                <td><img id="2" src="road.png" width="100px" /></td>
+                <td><img id="3" src="road.png" width="100px" /></td>
+                <td><img id="4" src="road.png" width="100px" /></td>
+                <td><img id="5" src="road.png" width="100px" /></td>
+                <td><img id="6" src="road.png" width="100px" /></td>
+                <td><img id="7" src="road.png" width="100px" /></td>
+                <td><img id="8" src="road.png" width="100px" /></td>
+                <td><img id="9" src="road.png" width="100px" /></td>
+                <td><img id="10" src="road.png" width="100px" /></td>
+                <td><img id="11" src="road.png" width="100px" /></td>
+            </tr>
+        </table>
+        <br />
+        <br />
+        <br />
+
+        <table>
+            <tr>
+                <td><img id="101" src="Car-blue.jpg" width="100px" /></td>
+                <td><img id="102" src="road.png" width="100px" /></td>
+                <td><img id="103" src="road.png" width="100px" /></td>
+                <td><img id="104" src="road.png" width="100px" /></td>
+                <td><img id="105" src="road.png" width="100px" /></td>
+                <td><img id="106" src="road.png" width="100px" /></td>
+                <td><img id="107" src="road.png" width="100px" /></td>
+                <td><img id="108" src="road.png" width="100px" /></td>
+                <td><img id="109" src="road.png" width="100px" /></td>
+                <td><img id="110" src="road.png" width="100px" /></td>
+                <td><img id="111" src="road.png" width="100px" /></td>
+            </tr>
+        </table>
+        <img width="380"
+            src="https://image.freepik.com/free-vector/cartoon-landscape-with-forest-sea-view-scenery-background-natural-trees-moss-trunks-rocks-ocean_107791-5584.jpg" />
+        <img width="380"
+            src="https://image.freepik.com/free-vector/cartoon-landscape-with-forest-sea-view-scenery-background-natural-trees-moss-trunks-rocks-ocean_107791-5584.jpg" />
+        <img width="380"
+            src="https://image.freepik.com/free-vector/cartoon-landscape-with-forest-sea-view-scenery-background-natural-trees-moss-trunks-rocks-ocean_107791-5584.jpg" />
+    </div>
+    <script>
+        rcp = 1;
+        bcp = 101;
+        function moveRedCar() {
+            let a = Math.floor(Math.random() * 100);
+            let b = (a % 4) + 1;
+            let value = document.getElementById("redMoves");
+            value.innerText = b;
+            document.getElementById("1").src = "road.png";
+            document.getElementById("2").src = "road.png";
+            document.getElementById("3").src = "road.png";
+            document.getElementById("4").src = "road.png";
+            document.getElementById("5").src = "road.png";
+            document.getElementById("6").src = "road.png";
+            document.getElementById("7").src = "road.png";
+            document.getElementById("8").src = "road.png";
+            document.getElementById("9").src = "road.png";
+            document.getElementById("10").src = "road.png";
+            document.getElementById("11").src = "road.png";
+            rcp = rcp + b;
+            if (rcp > 11) {
+                document.getElementById("winner").innerText = "Red Wins!";
+            }
+            document.getElementById(rcp).src = "Car-red.jpg";
+        }
+        function moveBlueCar() {
+            let a = Math.floor(Math.random() * 100);
+            let b = (a % 4) + 1;
+            let value = document.getElementById("blueMoves");
+            value.innerText = b;
+            document.getElementById("101").src = "road.png";
+            document.getElementById("102").src = "road.png";
+            document.getElementById("103").src = "road.png";
+            document.getElementById("104").src = "road.png";
+            document.getElementById("105").src = "road.png";
+            document.getElementById("106").src = "road.png";
+            document.getElementById("107").src = "road.png";
+            document.getElementById("108").src = "road.png";
+            document.getElementById("109").src = "road.png";
+            document.getElementById("110").src = "road.png";
+            document.getElementById("111").src = "road.png";
+            bcp = bcp + b;
+            if (bcp > 111) {
+                document.getElementById("winner").innerText = "Blue Wins!";
+            }
+            document.getElementById(bcp).src = "Car-blue.jpg";
+        }
+
+
+        // hide instructions car racing game
+        var seeInstructions = document.querySelector(".instructions")
+        function seeHideInstructions() {
+            seeInstructions.classList.toggle("hide-instructions")
+        }
+    </script>
+</body>
+
+</html>

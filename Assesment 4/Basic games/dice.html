@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+    <h1>Roll the dice!</h1>
+    <div class="dicegif">
+    <img src="https://thumbs.gfycat.com/CluelessDefinitiveBongo-max-1mb.gif" width="850px">
+    </div>
+    <br>
+    <button onclick="dice()">Click here to roll the dice</button>
+    <div>
+    <h1 id="print">1</h1>
+    <h1 id="six"></h1>
+    </div>
+
+
+    <script>
+        function dice(){
+            let a=Math.floor(Math.random()*100) 
+            let b=a%6+1
+            let value=document.getElementById("print");
+            value.innerText=b;
+            if (b==6){
+                let c=document.getElementById("six")
+                c.innerText="Excellent"
+        
+            }
+            
+            
+            else {
+                let c=document.getElementById("six")
+                c.innerText="Better luck next time!"
+            }
+        
+        }
+    </script>
+</body>
+</html>

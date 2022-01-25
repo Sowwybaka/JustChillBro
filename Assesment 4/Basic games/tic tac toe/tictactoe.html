@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="tictactoe.css">
+</head>
+
+<body>
+    <div class="instructions">
+    <h2>Instructions</h2>
+    <h3>The game is played on a grid that's 3 squares by 3 squares.
+        You are X, your friend is O. Players take turns putting their marks in empty squares.
+        The first player to get 3 of their marks in a row (up, down, across, or diagonally) is the winner.
+        When all 9 squares are full, the game is over.</h3>
+    </div>
+    <a href="tictactoe.html">
+    <button class="board-reset">Reset Board</button>
+</a>
+    <center>
+    <header>
+        <h1>Tic Tac Toe Board</h1>
+    </header>
+        <table class="board">
+            <tr>
+                <td><img onclick="changeOne()" id="one" src="image.jpg" height="200px" width="200px"></td>
+                <td><img onclick="changeTwo()" id="two" src="image.jpg" height="200px" width="200px"></td>
+                <td><img onclick="changeThree()" id="three" src="image.jpg" height="200px" width="200px"></td>
+            </tr>
+            <tr>
+                <td><img onclick="changeFour()" id="four" src="image.jpg" height="200px" width="200px"></td>
+                <td><img onclick="changeFive()" id="five" src="image.jpg" height="200px" width="200px"></td>
+                <td><img onclick="changeSix()" id="six" src="image.jpg" height="200px" width="200px"></td>
+            </tr>
+            <tr>
+                <td><img onclick="changeSeven()" id="seven" src="image.jpg" height="200px" width="200px"></td>
+                <td><img onclick="changeEight()" id="eight" src="image.jpg" height="200px" width="200px"></td>
+                <td><img onclick="changeNine()" id="nine" src="image.jpg" height="200px" width="200px"></td>
+            </tr>
+        </table>
+    </center>
+
+    <script>
+        c = 1
+        function changeOne() {
+            c = c + 1
+            if (c % 2 == 0) {
+                document.getElementById("one").src = "ximage1.png"
+            }
+            else {
+                document.getElementById("one").src = "Oimage.png"
+            }
+
+
+        }
+        function changeTwo() {
+            c = c + 1
+            if (c % 2 == 0) {
+                document.getElementById("two").src = "ximage1.png"
+            }
+            else {
+                document.getElementById("two").src = "Oimage.png"
+            }
+
+
+        }
+        function changeThree() {
+            c = c + 1
+            if (c % 2 == 0) {
+                document.getElementById("three").src = "ximage1.png"
+            }
+            else {
+                document.getElementById("three").src = "Oimage.png"
+            }
+
+
+
+        }
+        function changeFour() {
+            c = c + 1
+            if (c % 2 == 0) {
+                document.getElementById("four").src = "ximage1.png"
+            }
+            else {
+                document.getElementById("four").src = "Oimage.png"
+            }
+
+
+
+        }
+        function changeFive() {
+            c = c + 1
+            if (c % 2 == 0) {
+                document.getElementById("five").src = "ximage1.png"
+            }
+            else {
+                document.getElementById("five").src = "Oimage.png"
+            }
+
+
+
+        }
+        function changeSix() {
+            c = c + 1
+            if (c % 2 == 0) {
+                document.getElementById("six").src = "ximage1.png"
+            }
+            else {
+                document.getElementById("six").src = "Oimage.png"
+            }
+
+
+
+        }
+        function changeSeven() {
+            c = c + 1
+            if (c % 2 == 0) {
+                document.getElementById("seven").src = "ximage1.png"
+            }
+            else {
+                document.getElementById("seven").src = "Oimage.png"
+            }
+
+
+
+        }
+        function changeEight() {
+            c = c + 1
+            if (c % 2 == 0) {
+                document.getElementById("eight").src = "ximage1.png"
+            }
+            else {
+                document.getElementById("eight").src = "Oimage.png"
+            }
+
+
+        }
+        function changeNine() {
+            c = c + 1
+            if (c % 2 == 0) {
+                document.getElementById("nine").src = "ximage1.png"
+            }
+            else {
+                document.getElementById("nine").src = "Oimage.png"
+            }
+
+
+
+        }
+    </script>
+</body>
+
+</html>

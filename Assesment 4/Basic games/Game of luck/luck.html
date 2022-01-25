@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="luck.css">
+</head>
+
+<body>
+        <div class="scoreboard">
+                <table id="scores">
+                        <tr>
+                                <td> <img width=310px
+                                                src="https://cliply.co/wp-content/uploads/2021/03/372103860_CHECK_MARK_400px.gif">
+                                </td>
+                                <td> <img width=310px
+                                                src="https://cliply.co/wp-content/uploads/2021/07/372107370_CROSS_MARK_400px.gif">
+                                </td>
+                        </tr>
+                        <tr>
+                                <td class="displayScore" id="tickScore"></td>
+                                <td class="displayScore" id="crossScore"></td>
+                        </tr>
+                </table>
+                <div class="instructions">
+                        <h2>Instructions</h2>
+                        <h3>Click each question magnifying glass to reveal either a check or a cross. It will be randomized every time. If you reach 6 check marks first, then you are considered to have good luck. If you reach 5 cross marks first, then you are considered to have bad luck. Your score will be tracked in the scoreboard to the left. Go ahead and test your luck! </h3>
+                </div>
+                
+        </div>
+        <button id="showhideInstructionsGOL" onclick="showhideInstructionsGOL()">See/Hide Instructions</button>
+        <div class="table">
+                <table>
+                        <tr>
+                                <td> <img onclick="openbox(this.id)" id="1" width="150px"
+                                                src="https://static.thenounproject.com/png/2972518-200.png"> </td>
+                                <td> <img onclick="openbox(this.id)" id="2" width="150px"
+                                                src="https://static.thenounproject.com/png/2972518-200.png"> </td>
+                                <td> <img onclick="openbox(this.id)" id="3" width="150px"
+                                                src="https://static.thenounproject.com/png/2972518-200.png"> </td>
+                                <td> <img onclick="openbox(this.id)" id="4" width="150px"
+                                                src="https://static.thenounproject.com/png/2972518-200.png"> </td>
+                        </tr>
+                        <td> <img onclick="openbox(this.id)" id="5" width="150px"
+                                        src="https://static.thenounproject.com/png/2972518-200.png"> </td>
+                        <td> <img onclick="openbox(this.id)" id="6" width="150px"
+                                        src="https://static.thenounproject.com/png/2972518-200.png"> </td>
+                        <td> <img onclick="openbox(this.id)" id="7" width="150px"
+                                        src="https://static.thenounproject.com/png/2972518-200.png"> </td>
+                        <td> <img onclick="openbox(this.id)" id="8" width="150px"
+                                        src="https://static.thenounproject.com/png/2972518-200.png"> </td>
+                        </tr>
+                        <tr>
+                                <td> <img onclick="openbox(this.id)" id="9" width="150px"
+                                                src="https://static.thenounproject.com/png/2972518-200.png"> </td>
+                                <td> <img onclick="openbox(this.id)" id="10" width="150px"
+                                                src="https://static.thenounproject.com/png/2972518-200.png"> </td>
+                                <td> <img onclick="openbox(this.id)" id="11" width="150px"
+                                                src="https://static.thenounproject.com/png/2972518-200.png"> </td>
+                                <td> <img onclick="openbox(this.id)" id="12" width="150px"
+                                                src="https://static.thenounproject.com/png/2972518-200.png"> </td>
+                        </tr>
+                        <tr>
+                                <td> <img onclick="openbox(this.id)" id="13" width="150px"
+                                                src="https://static.thenounproject.com/png/2972518-200.png"> </td>
+                                <td> <img onclick="openbox(this.id)" id="14" width="150px"
+                                                src="https://static.thenounproject.com/png/2972518-200.png"> </td>
+                                <td> <img onclick="openbox(this.id)" id="15" width="150px"
+                                                src="https://static.thenounproject.com/png/2972518-200.png"> </td>
+                                <td> <img onclick="openbox(this.id)" id="16" width="150px"
+                                                src="https://static.thenounproject.com/png/2972518-200.png"> </td>
+                        </tr>
+                </table>
+        </div>
+        <script src="luck.js"></script>
+</body>
+
+</html>
